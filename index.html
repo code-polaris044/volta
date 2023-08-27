@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>volt</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
   </head>
   <body>
     <h1>テスト</h1>
-    <!-- <div class="your-slide-class">
+    <div class="your-slide-class">
       <div>
         <img
           src="https://dummyimage.com/600x400/d1d1d1/fff.gif"
@@ -26,7 +29,13 @@
           alt="slide-3"
         />
       </div>
-    </div> -->
-    <script src="index.js"></script>
+    </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-slide-class').slick();
+    });
+  </script>
   </body>
 </html>
