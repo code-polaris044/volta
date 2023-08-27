@@ -1,0 +1,9 @@
+.wrapper {
+  background: red;
+}
+
+@media (width <= 690px) {
+  .wrapper {
+    background: green;
+  }
+}
