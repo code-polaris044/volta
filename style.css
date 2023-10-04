@@ -1,4 +1,4 @@
-*,
+/* *,
 ::before,
 ::after {
   box-sizing: border-box;
@@ -278,15 +278,21 @@ a[href^="tel:"] {
   @include sp {
     pointer-events: auto;
   }
+} */
+
+.wrapper {
+  width: min(100% - 80px);
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+*/ .slick-dots li button:before {
+  font-size: 16px;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: #000 !important;
-}
-
-.wrapper {
   color: red;
-  width: 50%;
-  height: auto;
 }
