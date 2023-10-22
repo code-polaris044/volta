@@ -162,13 +162,125 @@
 //   document.querySelector("#list li").remove();
 // }
 
-//スネークケースはダメ
-document.getElementById("box").style.opacity = 0.2;
-// 複数プロパティ
-document.getElementById("box").style.cssText = "width: 400px; font-size: 50px";
+// //スネークケースはダメ
+// document.getElementById("box").style.opacity = 0.2;
+// // 複数プロパティ
+// document.getElementById("box").style.cssText = "width: 400px; font-size: 50px";
 
-//タグ直接cssの取得
-console.log(document.getElementById("box").style.width);
+// //タグ直接cssの取得
+// console.log(document.getElementById("box").style.width);
 
-//タグ間接cssの取得
-console.log(window.getComputedStyle(document.getElementById("box")).alignItems);
+// //タグ間接cssの取得
+// console.log(window.getComputedStyle(document.getElementById("box")).alignItems);
+
+// const tax = 1.1;
+
+// function insertText(itemPrice, element) {
+//   function calculation(price) {
+//     return Math.floor(price * tax);
+//   }
+
+//   document.getElementById(element).textContent =
+//     itemPrice + "円の商品に税込価格は" + calculation(itemPrice) + "円です";
+// }
+// insertText(100, "result");
+// insertText(200, "result2");
+// insertText(250, "result3");
+
+// console.log("css");
+// html();
+// console.log("php");
+
+// function html() {
+//   setTimeout(() => {
+//     console.log("html");
+//   }, 1000);
+// }
+
+// const item = {
+//   name: "パソコン",
+//   price: 10000,
+//   sale: true,
+//   parts: ["CPU", "メモリ", "HDD"],
+//   a: {
+//     b: "テスト",
+//   },
+// };
+
+// item["c"] = "Cです";
+
+// document.getElementById("test").textContent = "商品名は" + item.name;
+// document.getElementById("price").textContent = "値段は" + item["price"] + "円";
+
+// if (item["sale"]) {
+//   document.getElementById("sale").textContent = item["name"] + "セール中です。";
+// }
+
+// let texts = "";
+// for (let i = 0; i < item["parts"].length; i++) {
+//   texts += item["parts"][i];
+//   console.log("中" + texts);
+
+//   if (i !== item["parts"].length - 1) {
+//     texts += "・";
+//     console.log("処理後" + texts);
+//   }
+// }
+// console.log("外" + texts);
+// document.getElementById("sale").textContent =
+//   item["name"] + "パーツは" + texts + "です。";
+
+// document.getElementById("c").textContent = item["a"]["b"];
+// document.getElementById("c").textContent = item["c"];
+
+// const array = [1, 2, 4, 8];
+// const resultArray = array.map((x) => x * 2);
+// console.log(resultArray);
+
+// let input = document.getElementById("input").textContent;
+// console.log(typeof input);
+// input = Number(input);
+// console.log(typeof input);
+
+// document.querySelectorAll("ul li a").forEach((element) => {
+//   element.setAttribute("target", "_blank");
+//   console.log(element.hasAttribute("href"));
+// });
+
+// window.addEventListener("scroll", function () {
+//   let scroll = document.documentElement.scrollTop;
+//   document.getElementById("scolltest").textContent = scroll;
+
+//   if (scroll > 300) {
+//     document.querySelector("main").classList.add("test");
+//   }
+//   //   else {
+//   //     document.querySelector("main").classList.remove("test");
+//   //   }
+// });
+
+// const tax = function tax(number) {
+//   return number * 1.08;
+// };
+
+// const tax = (number) => number * 1.08;
+// document.getElementById("test").textContent = tax(100);
+
+// const loading = document.querySelector(".loader ");
+// window.addEventListener(
+//   "load",
+//   () => {
+//     loading.classList.add("hide");
+//   },
+//   false
+// );
+
+new Vue({
+  el: "#app",
+});
+
+let test = document.getElementById("test");
+document.getElementById("test").addEventListener("click", function () {
+  this.textContent = "クリックされました";
+  console.log(this);
+});
